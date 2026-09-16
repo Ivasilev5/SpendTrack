@@ -1,6 +1,6 @@
 package com.example.spendtrack.domain.model
 
-import kotlin.time.Instant
+import java.time.Instant
 
 
 data class ExchangeRate(
@@ -9,3 +9,5 @@ data class ExchangeRate(
     val rate: Double,
     val updatedAt: Instant
 )
+
+
