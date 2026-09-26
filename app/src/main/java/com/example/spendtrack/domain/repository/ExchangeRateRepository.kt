@@ -4,5 +4,5 @@ import com.example.spendtrack.domain.model.ExchangeRate
 
 interface ExchangeRateRepository {
 
-    suspend fun getExchangeRate() : Result<ExchangeRate>
+    suspend fun getExchangeRate(baseCurrency: String, targetCurrency: String): Result<ExchangeRate>
 }
